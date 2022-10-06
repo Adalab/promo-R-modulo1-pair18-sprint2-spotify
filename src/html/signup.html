@@ -6,9 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <title>Spotify</title>
+  <title>Spotify Singup</title>
 </head>
 
 <body>
+  <!-- <img class="logo" src="./assets/images/logo.png" alt="Spotify logo" />
+  <img class="logo hamb" src="./assets/images/menu-icon.png" alt="Spotify logo" /> -->
+    <h1>Regístrate gratis para escuchar.</h1>
+    <!-- button Registrarte con facebook-->
+    <!-- button Registrarte con Google-->
+    <div><p>o</p></div>
+    <h2>Regístrate con tu correo electrónico</h2>
+  
+    <form action="https://adalab-server-form.herokuapp.com/" method="POST">
+      <label for="email">¿Cuál es tu correo electrónico?</label>
+      <input type="email" placeholder="Pon tu correo electrónico." name="email"/>
+      <label for="email">Confirma el correo electrónico</label>
+      <input type="email" placeholder="Vuelve a poner tu correo electrónico." name="email"/>
+      <label for="password">Crea una contraseña</label>
+      <input type="password" placeholder="Crea una contraseña." name="password"/>
+      <label for="text">¿Cómo quieres que te llamemos?</label>
+      <input type="text" placeholder="Pon un nombre de perfil." name="text"/>
 
+      <label for="date">¿Cuál es tu fecha de nacimiento?</label>
+      <input type="date"/> <!-- day month year -->
+
+      <label>¿Cuál es tu género?</label>
+      
+      <input type="radio" name="radio" value="hombre" id="radioType1"/>
+      <label for="radioType1">Hombre</label>
+      <input type="radio" name="radio" value="mujer" id="radioType2"/>
+      <label for="radioType1">Mujer</label>
+      <input type="radio" name="radio" value="no binario" id="radioType3"/>
+      <label for="radioType1">No binario</label>
+
+      <input type="checkbox" name="checkbox1" value="si" id="checkbox1"/>
+      <label for="checkbox1">Quiero que me enviéis novedades y ofertas de Spotify</label>
+      <input type="checkbox" name="checkbox2" value="si" id="checkbox2"/>
+      <label for="checkbox1">Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.</label>
+    
+      <input type="submit" value="Registrarte"/>
+
+      <!-- ¿Ya tienes cuenta? Inicia sesión. -->
+    </form>
 </body>
